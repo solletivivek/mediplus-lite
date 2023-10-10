@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Page</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+		<!-- Favicon -->
+        <link rel="icon" href="img/favicon.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		
+</head>
+<body>
+  <div class="appointment single-page">
+    <div class="appointment-inner">
+      <div class="title">
+        <h3>Book an Appointment</h3>
+      </div>
+      <form action="/appointment" method="post" class="form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Your Phone Number">
+        </div>
+        <div class="form-group">
+          <select name="service" class="nice-select">
+            <option value="">Select a Service</option>
+            <option value="haircut">Haircut</option>
+            <option value="coloring">Coloring</option>
+            <option value="styling">Styling</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Message"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit" class="btn">Book Appointment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
