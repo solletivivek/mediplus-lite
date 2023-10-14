@@ -4,6 +4,8 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title</title>
   <link rel="stylesheet" href="./style.css">
 
@@ -15,6 +17,58 @@
 
 
 <style>
+  @media (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .wrapper .title-text {
+    flex-direction: column;
+  }
+
+  .wrapper .title {
+    width: 100%;
+  }
+
+  .slide-controls {
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .slide-controls .slide {
+    font-size: 16px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-inner form {
+    width: 100%;
+  }
+
+  .form-inner form .field {
+    margin-top: 10px;
+  }
+
+  .form-inner form .field input {
+    font-size: 16px;
+  }
+
+  .form-inner form .field.btn {
+    margin-top: 20px;
+  }
+
+  .form-inner form .btn input[type="submit"] {
+    font-size: 18px;
+  }
+
+  .form-inner form .pass-link,
+  .form-inner form .signup-link {
+    font-size: 14px;
+  }
+}
+
     @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
     * {
       margin: 0;
@@ -240,10 +294,10 @@
       </form>
       <form action="#" class="signup">
         <div class="field">
-          <input type="text" placeholder="Email Address" required>
+          <input type="text" placeholder="Full Name" required>
         </div>
         <div class="field">
-          <input type="text" placeholder="Email Address" required>
+          <input type="text" placeholder="Mobile Number" required>
         </div>
         <div class="field">
           <input type="text" placeholder="Email Address" required>
